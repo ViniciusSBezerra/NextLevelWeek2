@@ -38,7 +38,7 @@
 
         <main>
             
-            <form id="create-class" action="">
+            <form action="/save-classes" id="create-classes"  method="POST">
                 <fieldset>
                     <legend>Seus Dados</legend>
 
@@ -74,9 +74,9 @@
                                 {% for subject in subjects %}
 
                                 <option value="{{loop.index}}" >
-                                    {{subject}}
+                                    {{ subject }}
                                 </option>
-                                {%endfor%}
+                                {% endfor %}
 
                             </select>
                         </select>
@@ -133,13 +133,12 @@
                     Importante!<br>
                     Preencha todos os dados
                 </p>
-                <button type="submit" form="create-class">Salvar Cadastro</button>
+                <button type="submit" form="create-classes">Salvar Cadastro</button>
             </footer>
         </main>
     </div>
 
     <script src="./scripts/addField.js"></script>
-
 
 </body>
 </html>
